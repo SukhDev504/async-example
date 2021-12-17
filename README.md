@@ -2,6 +2,9 @@
 This is demo project using @Async concept 
 An important element of the async implementation is whether the result is a “wait for”, or a “fire and forget action”.
 
+@Async will make it execute in a separate thread. 
+In other words, the caller will not wait for the completion of the called method.
+
 ## 1. Enable Async Support
 Let's start by enabling asynchronous processing with Java configuration.
 We'll do this by adding the @EnableAsync to a configuration class/Main Class:
